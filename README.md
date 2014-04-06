@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dazld/osk.svg?branch=master)](https://travis-ci.org/dazld/osk)
+
 osk
 ===
 
