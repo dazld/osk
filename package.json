@@ -1,0 +1,31 @@
+{
+  "name": "osk",
+  "version": "1.0.0",
+  "description": "Exports a function that returns a function which oscillates between minimum and maximum values, with a specified step",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "should": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dazld/osk.git"
+  },
+  "keywords": [
+    "oscillator",
+    "iterator"
+  ],
+  "author": "Dan Peddle <dan@flarework.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dazld/osk/issues"
+  },
+  "homepage": "https://github.com/dazld/osk"
+}
