@@ -14,7 +14,10 @@ var osk = function osk(options) {
 		direction: options.reverse ? -1 : 1
 	};
 
-	var current = options.start ? options.start : options.reverse ? opts.max : opts.min;
+	var current = checkNum(options.start) ? options.start : options.reverse ? opts.max : opts.min;
+	if (current < opts.min || current > opts.max) {
+		throw new Error('Invalid options');
+	}
 	return function iterate() {
 		var initial = current;
 

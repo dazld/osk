@@ -148,24 +148,25 @@ describe('when invoking with a start value', function () {
 	var startOsc;
 	beforeEach(function(){
 		startOsc = osk({
-			start: 2
+			start: 0,
+			min: 0
 		});
 	});
 
 	it('returns the start value when invoked', function () {
-		startOsc().should.eql(2);
+		startOsc().should.eql(0);
 	});
 	it('the osc runs offset when run 2 times', function() {
 		doTimes(1, startOsc);
-		startOsc().should.eql(3);
+		startOsc().should.eql(1);
 	});
 	it('the osc runs offset when run 3 times', function() {
 		doTimes(2, startOsc);
-		startOsc().should.eql(4);
+		startOsc().should.eql(2);
 	});
 	it('the osc runs offset when run 4 times', function() {
 		doTimes(3, startOsc);
-		startOsc().should.eql(5);
+		startOsc().should.eql(3);
 	});
 	it('the osc runs offset when run 5 times', function() {
 		doTimes(4, startOsc);
@@ -173,15 +174,15 @@ describe('when invoking with a start value', function () {
 	});
 	it('the osc runs offset when run 6 times', function() {
 		doTimes(5, startOsc);
-		startOsc().should.eql(3);
+		startOsc().should.eql(5);
 	});
 	it('the osc runs offset when run 7 times', function() {
 		doTimes(6, startOsc);
-		startOsc().should.eql(2);
+		startOsc().should.eql(4);
 	});
 	it('the osc runs offset when run 8 times', function() {
 		doTimes(7, startOsc);
-		startOsc().should.eql(1);
+		startOsc().should.eql(3);
 	});
 	it('the osc runs offset when run 9 times', function() {
 		doTimes(8, startOsc);
